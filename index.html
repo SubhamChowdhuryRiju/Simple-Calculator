@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTS-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="src/styles.css">
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        <div class="Calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button class="clear" onclick="clearDisplay()">C</button>
+                <button class="operator" onclick="appendOperator('/')">/</button>
+                <button class="operator" onclick="appendOperator('*')">*</button>
+                <button class="operator" onclick="appendOperator('-')">-</button>
+                <button onclick="addNumber('7')">7</button>
+                <button onclick="addNumber('8')">8</button>
+                <button onclick="addNumber('9')">9</button>
+                <button class="operator" onclick="appendOperator('+')">+</button>
+                <button onclick="addNumber('4')">4</button>
+                <button onclick="addNumber('5')">5</button>
+                <button onclick="addNumber('6')">6</button>
+                <button onclick="appendDot('.')">.</button>
+                <button onclick="addNumber('1')">1</button>
+                <button onclick="addNumber('2')">2</button>
+                <button onclick="addNumber('3')">3</button>
+                <button class="equals" onclick="calculate()" style="grid-row: span 2;">=</button>
+                <button onclick="addNumber('0')" style="grid-column: span 2;">0</button>
+                <button onclick="addNumber('00')">00</button>
+            </div>
+        </div>
+
+    <script src="src/scripts.js"></script>
+    </body>
+</html>
